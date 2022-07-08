@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ABC_Demo10.TC01_Login_NonStatic__Methods">
+      <class name="practice1.advanced_xpath">
         <methods>
-          <include name="logintest"/>
+          <include name="launchbrowser"/>
         </methods>
-      </class> <!-- ABC_Demo10.TC01_Login_NonStatic__Methods -->
+      </class> <!-- practice1.advanced_xpath -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
