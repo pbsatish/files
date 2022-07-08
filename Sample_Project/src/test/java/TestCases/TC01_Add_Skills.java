@@ -49,8 +49,7 @@ public class TC01_Add_Skills
 		driver.get(TestURL);
 		
 		ExcelApiTest4 eat = new ExcelApiTest4();
-		Datatable=eat.getDataTable("C://HTML Report//OrangeHRM6//TC01_EMPExport4.xlsx", "Sheet1");
-		
+		Datatable=eat.getDataTable("C://selenium//HTML Report//OrangeHRM6//TC01_EMPExport4.xlsx", "Sheet1");
 		TestScriptName=(Datatable.get("TC02").get("TestName"));
 		
 				
@@ -93,7 +92,7 @@ public class TC01_Add_Skills
 		
 		LoginPage L1 = new LoginPage();
 		L1.LoginPage(driver,TestScriptName,logger,extent);
-		L1.Login(UserName,Password);
+		L1.Login123(UserName,Password);
 		
 
 		SkillsPage S1= new SkillsPage();

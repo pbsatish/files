@@ -55,14 +55,12 @@ public class Employeeskillsone
 	 	 
 	 	 findElement(By.xpath("//form[@id='frmEmpDelAttachments']")).click();
 	 	
-			Thread.sleep(1000);
-			WebElement  button=findElement(By.cssSelector("#ufile"));
-			Actions actions = new Actions(driver);
-		  	actions.moveToElement(button).click().build().perform();
+	 	Thread.sleep(1000);
 	 	 
-	 	
-	 	 
-        
+	 	WebElement  button=findElement(By.xpath("//*[@id=\"ufile\"]"));
+		Actions actions = new Actions(driver);
+	  	actions.moveToElement(button).click().build().perform();
+ 	 
 		
 		screenShotPath = ExtentReport.capture(driver,TestScriptName);
 		logger.pass("Employee Page - Screenshot",MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());

@@ -33,13 +33,21 @@ public class LoginPage
 	
 
 	
-	public void Login(String Uname,String Pwd) throws Exception {
+	public void Login123(String Uname,String Pwd) throws Exception {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+		
+		
+		
 		findElement(By.name("txtUsername")).sendKeys(Uname);
 		findElement(By.name("txtPassword")).sendKeys(Pwd);
-		findElement(By.id("btnLogin"));
+		findElement(By.id("btnLogin")).click();
+		
+		
+		//findElement(By.id("txtUsername")).sendKeys(Uname);
+		//findElement(By.name("txtPassword")).sendKeys(Pwd);
+		//findElement(By.id("btnLogin"));
 		
 		screenShotPath = ExtentReport.capture(driver,TestScriptName);
 		logger.pass("Login Page - Screenshot",MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());

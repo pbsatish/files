@@ -45,11 +45,11 @@ public class TC01_Add_Nationalities
 	public void  TestSetup()throws Exception {
 		
 		driver = TestBrowser.OpenChromeBrowser();
-		String TestURL = "https://opensource-demo.orangehrmlive.com/";
-		driver.get(TestURL);
+		//String TestURL = "https://opensource-demo.orangehrmlive.com/";
+		//driver.get(TestURL);
 		
 		ExcelApiTest4 eat = new ExcelApiTest4();
-		Datatable=eat.getDataTable("C://HTML Report//OrangeHRM6//TC01_EMPExport4.xlsx", "Sheet1");
+		Datatable=eat.getDataTable("C:\\selenium\\HTML Report\\OrangeHRM6TC01_EMPExport4.xlsx", "Sheet1");
 		
 		TestScriptName=(Datatable.get("TC01").get("TestName"));
 		
@@ -84,7 +84,7 @@ public class TC01_Add_Nationalities
 		/*System.out.println(Datatable.get("TC01").get("UserName"));
 		System.out.println(Datatable.get("TC01").get("Password"));
 		System.out.println(Datatable.get("TC01").get("Nationality"));*/
-		
+		String TestURL= Datatable.get("TC01").get("TestURL");
 		String UserName= Datatable.get("TC01").get("UserName");
 		String Password= Datatable.get("TC01").get("Password");
 		String Nationality= Datatable.get("TC01").get("Nationality");
@@ -93,7 +93,7 @@ public class TC01_Add_Nationalities
 		
 		LoginPage L1 = new LoginPage();
 		L1.LoginPage(driver,TestScriptName,logger,extent);
-		L1.Login(UserName,Password);
+		L1.Login123(UserName,Password);
 		
 		Nationalities N1= new Nationalities();
 		N1.Nationalities(driver,TestScriptName,logger,extent);

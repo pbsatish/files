@@ -3,20 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.TC01_Add_Nationalities">
+      <class name="TestCases.Employeeskills123">
         <methods>
           <include name="TestCloser"/>
-          <include name="Test1_Nationality"/>
           <include name="TestSetup"/>
+          <include name="Test1_Employee"/>
         </methods>
-      </class> <!-- TestCases.TC01_Add_Nationalities -->
-      <class name="TestCases.TC01_Add_Skills">
-        <methods>
-          <include name="TestSetup"/>
-          <include name="Test1_Nationality"/>
-          <include name="TestCloser"/>
-        </methods>
-      </class> <!-- TestCases.TC01_Add_Skills -->
+      </class> <!-- TestCases.Employeeskills123 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

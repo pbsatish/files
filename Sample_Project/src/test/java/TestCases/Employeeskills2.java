@@ -93,7 +93,7 @@ public class Employeeskills2
 		
 		LoginPage L1 = new LoginPage();
 		L1.LoginPage(driver,TestScriptName,logger,extent);
-		L1.Login(UserName,Password);
+		L1.Login123(UserName,Password);
 		
 		EMPLOYEEskills2 N1= new EMPLOYEEskills2();
 		 N1.EMPLOYEEskills(driver,TestScriptName,logger,extent);

@@ -47,7 +47,7 @@ public class Employeeskills123
 		driver.get(TestURL);
 		Thread.sleep(1000);
 		ExcelApiTest4 eat = new ExcelApiTest4();
-		Datatable=eat.getDataTable("C://HTML Report//OrangeHRM6//TC01_EMPExport4.xlsx","Sheet3");
+		Datatable=eat.getDataTable("C://selenium//HTML Report//OrangeHRM6//TC01_Export145.xlsx","Sheet1");
 		
 		TestScriptName=(Datatable.get("TC01").get("TestName"));
 		
@@ -94,12 +94,9 @@ public class Employeeskills123
 		
 		LoginPage L1 = new LoginPage();
 		L1.LoginPage(driver,TestScriptName,logger,extent);
-		L1.Login(UserName,Password);
+		L1.Login123(UserName,Password);
 		
-		Employeeskillsone N= new Employeeskillsone();
-		N.Employee12(driver,TestScriptName,logger,extent);
-		N.Employee123(Employeeid);
-		N.PhotoUpload(PhotoUpload);
+		
 		
 		EMPLOYEEskills2 N1= new EMPLOYEEskills2();
 		 N1.EMPLOYEEskills(driver,TestScriptName,logger,extent);
